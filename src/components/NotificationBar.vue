@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <p>
       Introducing Wela food services.
       <a href="#" class="white--text">Join waitlist</a>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.wrapper {
   background: var(--color-primary);
   display: flex;
   justify-content: center;

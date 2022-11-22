@@ -1,6 +1,6 @@
 <template>
   <div>
-    <wf-base-button text="Get Started" :small="true" :primary="true" />
+    <!-- <wf-base-button text="Get Started" :small="true" :primary="true" /> -->
   </div>
 </template>
 
