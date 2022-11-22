@@ -12,8 +12,11 @@ module.exports = {
             loader: 'sass-loader',
             // Requires sass-loader@^7.0.0
             options: {
-              implementation: require('sass'),
-              indentedSyntax: true, // optional
+              // implementation: require('sass'),
+              // indentedSyntax: true, // optional
+              data: `
+                @import "@/assets/scss/_variables.scss"
+              `,
             },
             // Requires >= sass-loader@^8.0.0
             // options: {

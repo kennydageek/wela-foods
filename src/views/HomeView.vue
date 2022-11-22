@@ -1,12 +1,14 @@
 <template>
-  <h1>HomeView</h1>
+  <div>
+    <wf-base-button text="Get Started" :small="true" :primary="true" />
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'HomeView',
   components: {},
 };
 </script>
+
+<style scoped></style>
