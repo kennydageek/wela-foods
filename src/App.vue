@@ -2,7 +2,7 @@
   <v-app id="app">
     <notification-bar class="notification-bar" />
     <v-main class="main-app">
-      <wf-nav-bar />
+      <wf-nav-bar class="nav-bar" />
       <router-view />
     </v-main>
   </v-app>
@@ -56,12 +56,17 @@ body {
 .main-app {
   /* background: blue; */
   width: 85%;
-  margin: 3rem auto;
+  margin: 2rem auto;
   /* margin: 10px 40px; */
 }
 
 .notification-bar {
   /* position: absolute; */
   /* width: 100%; */
+}
+
+.nav-bar {
+  margin-top: 1rem;
+  margin-bottom: 4.6rem;
 }
 </style>

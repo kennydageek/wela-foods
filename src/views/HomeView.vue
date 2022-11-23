@@ -1,13 +1,16 @@
 <template>
   <div>
-    <!-- <wf-base-button text="Get Started" :small="true" :primary="true" /> -->
+    <header-comp />
   </div>
 </template>
 
 <script>
+import HeaderComp from '@/components/HeaderComp';
 export default {
   name: 'HomeView',
-  components: {},
+  components: {
+    HeaderComp,
+  },
 };
 </script>
 

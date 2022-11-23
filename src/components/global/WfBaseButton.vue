@@ -50,7 +50,7 @@ button {
   font-size: 11px;
   font-weight: 600;
   min-width: 100px;
-  padding: 15px 24px;
+  padding: 20px 34px;
 }
 
 .btn-lg {
@@ -58,7 +58,7 @@ button {
   font-weight: 800px;
   line-height: 15px;
   min-width: 150px;
-  padding: 15px 24px;
+  padding: 25px 34px;
 }
 
 .btn-primary {

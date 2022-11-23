@@ -60,7 +60,6 @@ export default {
 .navigation {
   /* background: red; */
   justify-content: space-between;
-  margin-top: 38px;
 }
 
 .nav-logo,

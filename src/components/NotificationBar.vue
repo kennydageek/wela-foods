@@ -26,7 +26,7 @@ export default {
 
 p,
 a {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   margin-bottom: 0;
   padding: 10px 0;
