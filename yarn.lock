@@ -4362,6 +4362,11 @@
   "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   "version" "4.6.2"
 
+"lodash.split@^4.4.2":
+  "integrity" "sha512-kn1IDX0aHfg0FsnPIyxCHTamZXt3YK3aExRH1LW8YhzP6+sCldTm8+E4aIg+nSmM6R4eqdWGrXWtfYI961bwIw=="
+  "resolved" "https://registry.npmjs.org/lodash.split/-/lodash.split-4.4.2.tgz"
+  "version" "4.4.2"
+
 "lodash.truncate@^4.4.2":
   "integrity" "sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw=="
   "resolved" "https://registry.npmjs.org/lodash.truncate/-/lodash.truncate-4.4.2.tgz"
@@ -6548,6 +6553,11 @@
     "media-typer" "0.3.0"
     "mime-types" "~2.1.24"
 
+"typewriter-vue@^0.5.19":
+  "integrity" "sha512-rVgnc8jiIBCw8B3FnL3EFDNu611g/cwgzWLIotaord66JAq585DotS0K0I9zlC3Jq510XofNgDpD4+b0CQkJmw=="
+  "resolved" "https://registry.npmjs.org/typewriter-vue/-/typewriter-vue-0.5.19.tgz"
+  "version" "0.5.19"
+
 "unicode-canonical-property-names-ecmascript@^2.0.0":
   "integrity" "sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ=="
   "resolved" "https://registry.npmjs.org/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-2.0.0.tgz"
@@ -6723,6 +6733,13 @@
   "integrity" "sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw=="
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
+
+"vue-typer@^1.2.0":
+  "integrity" "sha512-o0n2F9yOnbdQak1OiPFbZonIzysL5jiS1OPgaEX0KnMlKqXRKi808QHRdoMuqw44oYQM/vtxCt3AaNb9OzKH1Q=="
+  "resolved" "https://registry.npmjs.org/vue-typer/-/vue-typer-1.2.0.tgz"
+  "version" "1.2.0"
+  dependencies:
+    "lodash.split" "^4.4.2"
 
 "vue@*", "vue@^2 || ^3.2.13", "vue@^2.0.0", "vue@^2.6.14", "vue@^2.6.4", "vue@^2.7.2":
   "integrity" "sha512-b2qkFyOM0kwqWFuQmgd4o+uHGU7T+2z3T+WQp8UBjADfEv2n4FEMffzBmCKNP0IGzOEEfYjvtcC62xaSKeQDrQ=="

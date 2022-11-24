@@ -2,7 +2,6 @@
   <div class="btn-wrapper">
     <button
       ref="baseButton"
-      :disabled="disableButton"
       v-on="$listeners"
       :class="{
         'btn-lg': large,

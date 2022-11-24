@@ -1,5 +1,11 @@
 <template>
-  <v-carousel cycle :show-arrows="false" hide-delimiters class="">
+  <v-carousel
+    cycle
+    :show-arrows="false"
+    hide-delimiters
+    height="550"
+    class="v-caroussel"
+  >
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -53,11 +59,12 @@ export default {
 <style scoped>
 .v-caroussel {
   border-radius: 2rem;
+  background-size: cover;
 }
 
 .info-box {
   position: absolute;
-  left: 2rem;
-  bottom: 4rem;
+  left: 3rem;
+  bottom: 6rem;
 }
 </style>
