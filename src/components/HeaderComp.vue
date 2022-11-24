@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row class="header-wrapper">
-      <v-col cols="6" class="heading-wrapper">
+      <v-col cols="7" class="heading-wrapper">
         <h1 class="heading">
           You are what <br />
           you...<vue-typer
@@ -73,6 +73,7 @@ export default {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 3rem;
+  width: 80%;
   /* margin: 5.2rem 0; */
   margin: 4rem 0;
 }
@@ -92,7 +93,7 @@ export default {
   position: relative;
   border-radius: 20px;
   width: 600px;
-  height: 500px;
+  height: 550px;
   padding: 0;
   margin: 0;
   /* justify-self: flex-end; */
