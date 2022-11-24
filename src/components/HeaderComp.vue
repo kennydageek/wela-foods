@@ -21,13 +21,21 @@
           <wf-base-button :large="true" :secondary="true" text="View Plans" />
         </div>
       </v-col>
-      <v-col cols="5" class="carousel-wrapper">col 2</v-col>
+      <v-col cols="4" class="carousel-wrapper">
+        <carousel-comp />
+      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-export default {};
+import CarouselComp from './CarouselComp';
+export default {
+  name: 'HeaderComp',
+  components: {
+    CarouselComp,
+  },
+};
 </script>
 
 <style scoped>
@@ -66,8 +74,10 @@ export default {};
 }
 
 .carousel-wrapper {
-  background: red;
-  height: 600px;
+  border-radius: 20px;
+  /* height: 600px; */
+  padding: 0;
+  margin: 0;
   /* justify-self: flex-end; */
 }
 </style>
