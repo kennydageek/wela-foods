@@ -70,9 +70,9 @@ export default {
 .heading__paragraph {
   color: rgba(0, 0, 0, 0.67);
   /* font-weight: 600; */
-  font-size: 2rem;
+  font-size: 2.3rem;
   line-height: 3rem;
-  width: 97%;
+  /* width: 97%; */
   /* margin: 5.2rem 0; */
   margin: 4rem 0;
 }

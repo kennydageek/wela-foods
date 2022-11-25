@@ -76,12 +76,12 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
   font-size: 16px;
 }
 
 #app {
   background: var(--bg-color);
+  font-family: var(--font-primary);
   /* font-family: var(--font-heading); */
   /* padding: 0 6rem; */
   /* padding: 3rem 13rem 0; */
