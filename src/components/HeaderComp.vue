@@ -8,7 +8,7 @@
             :text="['Eat', `Don't Eat`]"
             erase-style="backspace"
             initial-action="erasing"
-            type-delay="500"
+            :type-delay="500"
           ></vue-typer>
         </h1>
         <p class="heading__paragraph">
@@ -56,10 +56,10 @@ export default {
 .heading {
   /* font-weight: 800; */
   /* font-size: 9.2rem; */
-  font-size: 7rem;
+  font-size: 9rem;
   font-family: 'neue machina';
   /* line-height: 12rem; */
-  line-height: 8rem;
+  line-height: 10rem;
   color: #000;
 }
 
@@ -68,12 +68,11 @@ export default {
 }
 
 .heading__paragraph {
-  color: #000;
-  opacity: 67%;
-  font-weight: 600;
-  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.67);
+  /* font-weight: 600; */
+  font-size: 2rem;
   line-height: 3rem;
-  width: 80%;
+  width: 97%;
   /* margin: 5.2rem 0; */
   margin: 4rem 0;
 }
