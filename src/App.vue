@@ -80,6 +80,7 @@ body {
 }
 
 #app {
+  position: relative;
   background: var(--bg-color);
   font-family: var(--font-primary);
   /* font-family: var(--font-heading); */
@@ -89,8 +90,9 @@ body {
 
 .main-app {
   /* background: blue; */
-  width: 85%;
+  /* width: 85%; */
   margin: 2rem auto;
+  /* position: relative; */
   /* margin: 10px 40px; */
 }
 
@@ -100,6 +102,7 @@ body {
 }
 
 .nav-bar {
+  padding: 0 13rem;
   margin-top: 1rem;
   margin-bottom: 4.6rem;
 }

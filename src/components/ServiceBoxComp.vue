@@ -1,29 +1,44 @@
 <template>
   <div class="service-wrapper">
     <div class="title">
-      <div>
-        <img src="../assets/images/icons/charge.svg" />
+      <div :class="services.imgBg">
+        <img :src="services.img" height="24" width="24" />
       </div>
-      <p class="heading">Fast Delivery Process</p>
+      <p class="heading">{{ services.heading }}</p>
     </div>
 
     <p class="content">
-      Have ingredients delivered to you within minutes from our store ranging
-      from African to Continental cuisines
+      {{ services.content }}
     </p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    services: {
+      type: Object,
+      default: () => {},
+    },
+  },
+};
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.yellowbg {
+  background-color: rgba(255, 230, 0, 0.09);
+}
+
+.bluebg {
+  background-color: #f0fff8;
+}
+
 .service-wrapper {
   background: #fff;
-  padding: 3.3rem 4.5rem;
-  width: 50rem;
+  padding: 2rem 4.5rem;
+  width: 100%;
   max-width: 50rem;
+  border-radius: 1rem;
 }
 
 .title {
@@ -36,27 +51,26 @@ export default {};
   width: 4.9rem;
   height: 4.9rem;
   border-radius: 1.4rem;
-  background-color: rgba(255, 230, 0, 0.09);
+  /* //   background-color: rgba(255, 230, 0, 0.09); */
 }
 
 .title img {
-  //   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   align-self: center;
-  //   background: red;
 }
 
 .heading {
   color: #000;
   font-weight: 800;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-family: 'neue machina';
   margin-left: 2.9rem;
   align-self: center;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 .content {
