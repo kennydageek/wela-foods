@@ -54,6 +54,10 @@
         </template>
       </section-service-comp>
     </section>
+
+    <section class="section-faq">
+      <FaqComp />
+    </section>
   </div>
 </template>
 
@@ -62,6 +66,7 @@ import HeaderComp from '@/components/HeaderComp';
 import BrandComp from '@/components/BrandComp';
 import SectionServiceComp from '@/components/SectionServiceComp';
 import ServiceBoxComp from '@/components/ServiceBoxComp';
+import FaqComp from '@/components/FaqComp';
 export default {
   name: 'HomeView',
   components: {
@@ -69,6 +74,7 @@ export default {
     BrandComp,
     SectionServiceComp,
     ServiceBoxComp,
+    FaqComp,
   },
 
   data() {
@@ -147,5 +153,10 @@ export default {
 .section-service {
   position: relative;
   padding: 0 0 0 13rem;
+}
+
+.section-faq {
+  margin-top: 20rem;
+  padding: 0 13rem;
 }
 </style>
