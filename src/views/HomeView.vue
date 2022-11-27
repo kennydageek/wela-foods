@@ -8,24 +8,51 @@
     </section>
 
     <section class="section-service">
-      <v-row class="service-row">
-        <v-col cols="5" class="service-info">
+      <section-service-comp
+        :bgColor="bgColor[0]"
+        :image="serviceImages[0]"
+        :waves="waves[0]"
+      >
+        <template #heading>
           <h1 class="heading mt-16">
-            Why use <span>Wela</span> food services ??
+            Why use <span :class="txtColor[0]">Wela</span> food services ??
           </h1>
+        </template>
+
+        <template #service-box>
           <div v-for="(service, i) in services" :key="i">
             <service-box-comp :services="services[i]" class="mb-12" />
-            <!-- <service-box-comp /> -->
           </div>
-        </v-col>
-        <v-col cols="7" class="service-image">
-          <div class="service-image__img">
-            <img src="../assets/images/photos/dispatch-rider.png" alt="" />
-          </div>
+        </template>
 
-          <img src="../assets/images/photos/wavy-1.svg" alt="" />
-        </v-col>
-      </v-row>
+        <template #waves>
+          <img src="../assets/images/photos/wavy-1.svg" alt="" class="waves" />
+        </template>
+      </section-service-comp>
+    </section>
+
+    <section class="section-service">
+      <section-service-comp :bgColor="bgColor[1]" :image="serviceImages[1]">
+        <template #heading>
+          <h1 class="heading mt-16">
+            <span :class="txtColor[1]">Wela</span> foods has you covered
+          </h1>
+        </template>
+
+        <template #service-box>
+          <div v-for="(plan, i) in plans" :key="i">
+            <service-box-comp :services="plans[i]" class="mb-12" />
+          </div>
+        </template>
+
+        <template #waves>
+          <img
+            src="../assets/images/photos/wavy-2.svg"
+            class="bottom-waves"
+            alt=""
+          />
+        </template>
+      </section-service-comp>
     </section>
   </div>
 </template>
@@ -33,17 +60,41 @@
 <script>
 import HeaderComp from '@/components/HeaderComp';
 import BrandComp from '@/components/BrandComp';
+import SectionServiceComp from '@/components/SectionServiceComp';
 import ServiceBoxComp from '@/components/ServiceBoxComp';
 export default {
   name: 'HomeView',
   components: {
     HeaderComp,
     BrandComp,
+    SectionServiceComp,
     ServiceBoxComp,
   },
 
   data() {
     return {
+      waves: [
+        require('@/assets/images/photos/wavy-1.svg'),
+        require('@/assets/images/photos/wavy-2.svg'),
+      ],
+      plans: [
+        {
+          img: require('@/assets/images/icons/Play.svg'),
+          imgBg: 'greybg',
+          heading: 'Seamless tutorial videos ',
+          content:
+            'We offer different video tutorials on youtube to teach people how to cook',
+        },
+
+        {
+          img: require('@/assets/images/icons/Supergroup.svg'),
+          imgBg: 'greenbg',
+          heading: 'Affordable family plans',
+          content:
+            'We offer affordable plans that accomodates your entire household',
+        },
+      ],
+
       services: [
         {
           img: require('@/assets/images/icons/charge.svg'),
@@ -60,12 +111,26 @@ export default {
           content: 'Wela foods only deals with clean & germ free food products',
         },
       ],
+      bgColor: ['bgColor', 'bgColor-2'],
+      txtColor: ['primarytxt', 'secondarytxt'],
+      serviceImages: [
+        require('@/assets/images/photos/dispatch-rider.png'),
+        require('@/assets/images/photos/family-plan.png'),
+      ],
     };
   },
 };
 </script>
 
 <style scoped>
+.primarytxt {
+  color: var(--color-accent);
+}
+
+.secondarytxt {
+  color: var(--color-primary);
+}
+
 .header-comp {
   padding: 0 13rem;
 }
@@ -82,60 +147,5 @@ export default {
 .section-service {
   position: relative;
   padding: 0 0 0 13rem;
-}
-
-.service-row {
-  justify-content: space-between;
-}
-
-.service-info {
-  margin: 0;
-  padding: 0;
-}
-
-.service-image {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background: var(--color-accent-2);
-}
-
-.service-image img {
-  width: 20.47rem;
-  height: 18.62rem;
-  position: absolute;
-  right: -1.5rem;
-  top: -1rem;
-}
-
-.service-image div {
-  border-radius: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 60rem;
-  width: 45rem;
-}
-
-.service-image__img img {
-  border-radius: 1rem;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.heading {
-  width: 75%;
-  font-size: 7.5rem;
-  font-weight: 800;
-  font-family: var(--font-heading);
-  line-height: 9rem;
-  margin-top: 4rem;
-}
-
-.heading span {
-  color: var(--color-accent);
 }
 </style>

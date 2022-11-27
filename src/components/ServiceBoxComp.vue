@@ -33,11 +33,19 @@ export default {
   background-color: #f0fff8;
 }
 
+.greybg {
+  background-color: #fafafa;
+}
+
+.greenbg {
+  background-color: #f0fff8;
+}
+
 .service-wrapper {
   background: #fff;
-  padding: 2rem 4.5rem;
+  padding: 2rem 3rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 45rem;
   border-radius: 1rem;
 }
 
@@ -65,7 +73,7 @@ export default {
 .heading {
   color: #000;
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: 'neue machina';
   margin-left: 2.9rem;
   align-self: center;
