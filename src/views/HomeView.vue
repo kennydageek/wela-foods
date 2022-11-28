@@ -56,7 +56,11 @@
     </section>
 
     <section class="section-faq">
-      <FaqComp />
+      <faq-comp />
+    </section>
+
+    <section class="section-contact">
+      <contact-comp />
     </section>
   </div>
 </template>
@@ -67,6 +71,7 @@ import BrandComp from '@/components/BrandComp';
 import SectionServiceComp from '@/components/SectionServiceComp';
 import ServiceBoxComp from '@/components/ServiceBoxComp';
 import FaqComp from '@/components/FaqComp';
+import ContactComp from '@/components/ContactComp.vue';
 export default {
   name: 'HomeView',
   components: {
@@ -75,6 +80,7 @@ export default {
     SectionServiceComp,
     ServiceBoxComp,
     FaqComp,
+    ContactComp,
   },
 
   data() {
@@ -158,5 +164,10 @@ export default {
 .section-faq {
   margin-top: 20rem;
   padding: 0 13rem;
+}
+
+.section-contact {
+  padding: 0 13rem;
+  margin-top: 18rem;
 }
 </style>
