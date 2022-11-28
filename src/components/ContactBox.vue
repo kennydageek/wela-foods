@@ -1,16 +1,30 @@
 <template>
-  <div class="contactbox-wrapper">
-    <img src="../assets/images/photos/onyema.png" alt="" />
-    <div class="content">
-      <p class="name">Onyema</p>
-      <p class="email">onyema@brainfriendsupport.com</p>
-      <div class="phone">0812 407 6934</div>
-    </div>
-  </div>
+  <v-row class="root">
+    <v-col
+      cols="4"
+      class="contactbox-wrapper"
+      v-for="(item, i) in contact"
+      :key="i"
+    >
+      <img :src="item.image" />
+      <div class="content">
+        <p class="name">{{ item.name }}</p>
+        <p class="email">{{ item.email }}</p>
+        <div class="phone">{{ item.phone }}</div>
+      </div>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    contact: {
+      type: Array,
+      default: () => [],
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -19,8 +33,9 @@ export default {};
   padding: 1rem;
   background-color: #fff;
   border-radius: 6.3rem;
-  width: 40rem;
+  width: 35rem;
   transition: background-color 0.5s ease-in-out;
+  margin-bottom: 4rem;
 }
 
 .contactbox-wrapper:hover {
@@ -33,11 +48,13 @@ export default {};
 }
 
 .contact-wrapper img {
+  align-self: center;
   width: 8rem;
   height: 8rem;
 }
 
 .content {
+  align-self: center;
   margin-left: 2rem;
 }
 
