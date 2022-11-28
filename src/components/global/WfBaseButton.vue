@@ -8,6 +8,7 @@
         'btn-sm': small,
         'btn-primary': primary,
         'btn-secondary': secondary,
+        'btn-tertiary': tertiary,
       }"
     >
       {{ text }}
@@ -28,6 +29,7 @@ export default {
     small: Boolean,
     primary: Boolean,
     secondary: Boolean,
+    tertiary: Boolean,
   },
 };
 </script>
@@ -56,19 +58,26 @@ button {
   font-size: 16px;
   font-weight: 800px;
   line-height: 15px;
-  min-width: 150px;
+  min-width: 170px;
   padding: 25px 34px;
 }
 
 .btn-primary {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
-  color: white;
+  color: #fff;
 }
 
 .btn-secondary {
   border-color: #ffdaae;
   background-color: #ffdaae;
   color: var(--color-accent);
+  font-size: 1.8rem !important;
+}
+
+.btn-tertiary {
+  background-color: #fff;
+  color: var(--color-primary);
+  font-size: 1.8rem !important;
 }
 </style>

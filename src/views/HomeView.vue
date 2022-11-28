@@ -62,6 +62,10 @@
     <section class="section-contact">
       <contact-comp />
     </section>
+
+    <section class="section-register">
+      <RegisterComp />
+    </section>
   </div>
 </template>
 
@@ -72,6 +76,7 @@ import SectionServiceComp from '@/components/SectionServiceComp';
 import ServiceBoxComp from '@/components/ServiceBoxComp';
 import FaqComp from '@/components/FaqComp';
 import ContactComp from '@/components/ContactComp.vue';
+import RegisterComp from '@/components/RegisterComp.vue';
 export default {
   name: 'HomeView',
   components: {
@@ -81,6 +86,7 @@ export default {
     ServiceBoxComp,
     FaqComp,
     ContactComp,
+    RegisterComp,
   },
 
   data() {
@@ -169,5 +175,10 @@ export default {
 .section-contact {
   padding: 0 13rem;
   margin-top: 18rem;
+}
+
+.section-register {
+  padding: 0 13rem;
+  margin-top: 11rem;
 }
 </style>
