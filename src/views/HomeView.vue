@@ -70,6 +70,10 @@
     <section class="section-form">
       <form-comp />
     </section>
+
+    <section class="section-mobile">
+      <mobile-comp />
+    </section>
   </div>
 </template>
 
@@ -82,6 +86,7 @@ import FaqComp from '@/components/FaqComp';
 import ContactComp from '@/components/ContactComp.vue';
 import RegisterComp from '@/components/RegisterComp.vue';
 import FormComp from '@/components/FormComp';
+import MobileComp from '@/components/MobileComp';
 export default {
   name: 'HomeView',
   components: {
@@ -93,6 +98,7 @@ export default {
     ContactComp,
     RegisterComp,
     FormComp,
+    MobileComp,
   },
 
   data() {
@@ -191,5 +197,10 @@ export default {
 .section-form {
   margin-top: 15rem;
   padding: 0 13rem;
+}
+
+.section-mobile {
+  margin-top: 30rem;
+  padding: 0 0 0 13rem;
 }
 </style>
