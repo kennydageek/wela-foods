@@ -8,7 +8,7 @@
     <p class="countdown-timer">
       <vue-countdown-timer
         :start-time="'2022-11-30 00:00:00'"
-        :end-time="' 12:59:59'"
+        :end-time="'2022-12-5 12:59:59'"
         :interval="1000"
         label-position="begin"
         :end-text="'Event ended!'"

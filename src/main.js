@@ -33,5 +33,6 @@ new Vue({
   vuetify,
   router,
   store,
+  VueCountdownTimer,
   render: (h) => h(App),
 }).$mount('#app');
