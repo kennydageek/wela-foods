@@ -5,7 +5,20 @@
       You get to experience the softwae firsthand, and for free.
     </p>
 
-    <p class="countdown-timer">22hrs:40mins:12secs left</p>
+    <p class="countdown-timer">
+      <vue-countdown-timer
+        :start-time="'2022-11-30 00:00:00'"
+        :end-time="' 12:59:59'"
+        :interval="1000"
+        label-position="begin"
+        :end-text="'Event ended!'"
+        :day-txt="null"
+        :hour-txt="'hrs'"
+        :minutes-txt="'mins'"
+        :seconds-txt="'secs'"
+      >
+      </vue-countdown-timer>
+    </p>
     <div class="cta">
       <wf-base-button
         :large="true"
@@ -68,5 +81,9 @@ export default {};
   display: flex;
   /* justify-content: space-between; */
   width: 35rem;
+}
+
+i {
+  font-style: normal !important;
 }
 </style>
