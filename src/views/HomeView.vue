@@ -78,6 +78,10 @@
     <section class="section-metrics">
       <metrics-comp />
     </section>
+
+    <section class="section-footer">
+      <footer-comp />
+    </section>
   </div>
 </template>
 
@@ -92,6 +96,7 @@ import RegisterComp from '@/components/RegisterComp.vue';
 import FormComp from '@/components/FormComp';
 import MobileComp from '@/components/MobileComp';
 import MetricsComp from '@/components/MetricsComp';
+import FooterComp from '@/components/FooterComp';
 export default {
   name: 'HomeView',
   components: {
@@ -105,6 +110,7 @@ export default {
     FormComp,
     MobileComp,
     MetricsComp,
+    FooterComp,
   },
 
   data() {
@@ -213,5 +219,11 @@ export default {
 .section-metrics {
   padding: 0 13rem;
   margin-top: 25rem;
+}
+
+.section-footer {
+  margin-top: 18rem;
+  padding: 0 0 0 13rem;
+  /* background-color: #fff; */
 }
 </style>
