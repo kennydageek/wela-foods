@@ -45,10 +45,19 @@
               Chefs
             </p>
             <!-- <p class="second-col__title">Over</p> -->
-            <p class="second-col__num">2.5k</p>
+            <p class="second-col__num second-col__num--mt">2.5k</p>
           </div>
         </div>
-        <div class="bottom"></div>
+        <div class="bottom">
+          <div class="info-box info-box--large">
+            <div class="content">
+              <p class="content__heading content__heading--small">
+                Learn cooking with step by step tutorial videos
+              </p>
+              <p class="footer footer--small">Novice to expert</p>
+            </div>
+          </div>
+        </div>
       </v-col>
     </v-row>
   </div>
@@ -98,7 +107,14 @@ export default {};
   padding: 1.2rem 1.8rem;
   background-color: #fff;
   border-radius: 1rem;
-  width: 80%;
+  width: 85%;
+}
+
+.info-box--large {
+  width: 90%;
+  left: 1rem;
+  bottom: 1rem;
+  padding-left: 0.5rem;
 }
 
 .avatar {
@@ -133,8 +149,16 @@ export default {};
   /* line-height: 0; */
 }
 
+.content__heading--small {
+  font-size: 1rem;
+}
+
 .footer {
   margin-bottom: 0;
+}
+
+.footer--small {
+  font-size: 1rem;
 }
 
 .second-col {
@@ -183,6 +207,10 @@ export default {};
   font-family: 'neue machina';
 }
 
+.second-col__num--mt {
+  margin-top: 8rem;
+}
+
 .third-col {
   /* height: 100%; */
   /* padding: 0 2rem; */
@@ -220,6 +248,7 @@ export default {};
 }
 
 .bottom {
+  position: relative;
   height: 48%;
   background-image: url('../assets/images/photos/food-3.jpg');
   background-size: cover;
