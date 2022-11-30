@@ -6,6 +6,19 @@
         <a :href="link.url">{{ link.text }}</a>
       </div>
     </div>
+
+    <v-row class="footer-copy">
+      <v-col class="footer-copy__first-col">
+        <div class="img-div">
+          <img src="../assets/images/icons/facebook.svg" alt="" />
+          <img src="../assets/images/icons/youtube.svg" alt="" />
+          <img src="../assets/images/icons/whatsapp.svg" alt="" />
+        </div>
+      </v-col>
+      <v-col class="footer-copy__second-col"
+        >© 2000-2021, All Rights Reserved</v-col
+      >
+    </v-row>
   </div>
 </template>
 
@@ -64,7 +77,6 @@ export default {
 .footer-bottom-wrapper {
   padding: 0 13rem 0 0;
   background-color: #fff !important;
-  min-height: 30rem;
 }
 hr {
   background-color: #dfdfe0;
@@ -84,5 +96,27 @@ hr {
 .links a {
   color: #9a9ea6;
   font-size: 1.6rem;
+}
+
+.footer-copy {
+  padding: 0 13rem 0 9rem;
+  margin-top: 3rem;
+  margin-bottom: -1.99rem;
+}
+
+.footer-copy__first-col {
+  /* background: red; */
+}
+
+.img-div {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-copy__second-col {
+  font-size: 1.4rem;
+  color: #9a9ea6;
+  align-self: center;
+  text-align: right;
 }
 </style>
