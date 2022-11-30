@@ -40,7 +40,7 @@ export default {
   padding: 3rem 10rem;
   display: flex;
   justify-content: space-between;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
 }
 
 .image-container {
