@@ -68,7 +68,7 @@ export default {
 
 .info-sm {
   display: flex;
-  width: 30rem;
+  width: 70%;
   padding: 1.5rem;
   border-radius: 8px;
   backdrop-filter: blur(3px);

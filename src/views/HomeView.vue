@@ -237,4 +237,10 @@ export default {
   margin-top: 0;
   padding: 0 0 0 13rem;
 }
+
+@media screen and (max-width: 968.99px) {
+  .header-comp {
+    padding: 0 6rem;
+  }
+}
 </style>
