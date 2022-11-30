@@ -82,6 +82,10 @@
     <section class="section-footer">
       <footer-comp />
     </section>
+
+    <section class="section-footer section-footer-bottom">
+      <footer-bottom-comp />
+    </section>
   </div>
 </template>
 
@@ -97,6 +101,7 @@ import FormComp from '@/components/FormComp';
 import MobileComp from '@/components/MobileComp';
 import MetricsComp from '@/components/MetricsComp';
 import FooterComp from '@/components/FooterComp';
+import FooterBottomComp from '@/components/FooterBottomComp';
 export default {
   name: 'HomeView',
   components: {
@@ -111,6 +116,7 @@ export default {
     MobileComp,
     MetricsComp,
     FooterComp,
+    FooterBottomComp,
   },
 
   data() {
@@ -225,5 +231,10 @@ export default {
   margin-top: 18rem;
   padding: 0 0 0 13rem;
   /* background-color: #fff; */
+}
+
+.section-footer-bottom {
+  margin-top: 0;
+  padding: 0 0 0 13rem;
 }
 </style>
