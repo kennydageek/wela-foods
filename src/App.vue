@@ -2,7 +2,7 @@
   <v-app id="app">
     <notification-bar class="notification-bar" />
     <v-main class="main-app">
-      <wf-nav-bar class="nav-bar" />
+      <wf-nav-bar class="nav-bar px-sm-14" />
       <router-view />
     </v-main>
   </v-app>

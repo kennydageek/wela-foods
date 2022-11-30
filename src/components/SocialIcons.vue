@@ -25,7 +25,7 @@ export default {
           social: 'Twitter',
         },
         {
-          iconUrl: require('@/assets/images/icons/youtube.svg'),
+          iconUrl: require('@/assets/images/icons/YoutubeBig.svg'),
           social: 'Youtube',
         },
         {

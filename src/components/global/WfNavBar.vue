@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row class="navigation" no-gutters>
-      <v-col class="nav-logo">
+      <v-col cols="2" class="nav-logo">
         <img src="../../assets/images/icons/logo.svg" alt="" />
       </v-col>
       <v-col class="nav-link">
@@ -13,7 +13,7 @@
           >{{ link.text }}</a
         >
       </v-col>
-      <v-col class="nav-cta">
+      <v-col class="nav-cta" cols="3">
         <a href="#" class="nav-cta nav-link__link">pricing</a>
         <wf-base-button
           text="Get Started"
