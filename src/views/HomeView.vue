@@ -220,7 +220,6 @@ export default {
 .section-mobile {
   margin-top: 30rem;
   padding: 0 0 0 13rem;
-  overflow-x: hidden;
 }
 
 .section-metrics {
@@ -246,8 +245,13 @@ export default {
   .section-faq,
   .section-contact,
   .section-register,
-  .section-form {
+  .section-form,
+  .section-mobile {
     padding: 0 6rem;
+  }
+
+  .section-mobile {
+    margin-top: 20rem;
   }
 
   .heading {

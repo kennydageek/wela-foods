@@ -1,14 +1,16 @@
 <template>
   <v-row>
-    <v-col cols="5">
+    <v-col cols="5" sm="12" md="5">
       <h1 class="heading">Download <span>Wela</span> mobile application</h1>
       <p class="paragraph">
         Join thousands of user around the waiting to use our mobile app
       </p>
 
-      <wf-base-button :large="true" :secondary="true" text="Coming soon" />
+      <div class="cta">
+        <wf-base-button :large="true" :secondary="true" text="Coming soon" />
+      </div>
     </v-col>
-    <v-col cols="6">
+    <v-col cols="6" sm="12" md="6">
       <img src="../assets/images/photos/mobileapp.svg" alt="" />
     </v-col>
   </v-row>
@@ -41,5 +43,24 @@ export default {};
 img {
   width: 80rem;
   height: 80rem;
+}
+
+@media screen and (max-width: 968.99px) {
+  .heading {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+  .cta {
+    margin: 0 auto;
+    width: 17rem;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 </style>
