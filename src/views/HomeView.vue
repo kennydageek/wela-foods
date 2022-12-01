@@ -242,7 +242,8 @@ export default {
 @media screen and (max-width: 968.99px) {
   .header-comp,
   .brands,
-  .section-service {
+  .section-service,
+  .section-faq {
     padding: 0 6rem;
   }
 
