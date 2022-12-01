@@ -246,12 +246,17 @@ export default {
   .section-contact,
   .section-register,
   .section-form,
-  .section-mobile {
+  .section-mobile,
+  .section-metrics {
     padding: 0 6rem;
   }
 
   .section-mobile {
     margin-top: 20rem;
+  }
+
+  .section-metrics {
+    margin-top: 8rem;
   }
 
   .heading {

@@ -2,7 +2,7 @@
   <div>
     <h1 class="heading">Loved and used by individuals couples, & families</h1>
     <v-row class="metric-row">
-      <v-col cols="3" class="first-col">
+      <v-col cols="3" sm="7" md="3" class="first-col">
         <div class="info-box">
           <div class="avatar">
             <p class="avatar__text">AM</p>
@@ -14,7 +14,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="2" class="second-col">
+      <v-col cols="2" sm="4" md="2" class="second-col">
         <div class="image">
           <img src="../assets/images/photos/food-1.svg" alt="" />
         </div>
@@ -27,8 +27,8 @@
           <p class="second-col__num">70k</p>
         </div>
       </v-col>
-      <v-col cols="3" class="third-col"> </v-col>
-      <v-col cols="3" class="fourth-col">
+      <v-col cols="3" sm="4" md="3" class="third-col mt-10"> </v-col>
+      <v-col cols="3" sm="7" md="3" class="fourth-col mt-10">
         <div class="top">
           <div class="total-users">
             <p class="second-col__heading">
@@ -252,5 +252,12 @@ export default {};
   height: 48%;
   background-image: url('../assets/images/photos/food-3.jpg');
   background-size: cover;
+}
+
+@media screen and (max-width: 968.99px) {
+  .heading {
+    font-size: 6rem;
+    /* text-align: left; */
+  }
 }
 </style>
