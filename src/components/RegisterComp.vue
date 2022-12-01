@@ -29,7 +29,11 @@
       <wf-base-button :large="true" :tertiary="true" text="Contact team" />
     </div>
 
-    <img src="../assets/images/photos/wavy-3.svg" alt="" />
+    <img
+      src="../assets/images/photos/wavy-3.svg"
+      alt=""
+      class="d-none d-sm-flex"
+    />
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
   <v-row class="form-row">
-    <v-col cols="5" sm="12" md="5" class="mb-10">
+    <v-col cols="12" md="5" class="mb-10">
       <h1 class="heading">
         Want to be the first to try out <span>Wela?</span>
       </h1>
     </v-col>
 
-    <v-col cols="6" sm="12" md="5">
+    <v-col cols="12" md="5">
       <div class="form-div">
         <p class="form-div__heading">
           Please Enter Your Details in the Form Below
@@ -72,7 +72,11 @@
 
           <button class="btn__cta" type="submit">Request Access</button>
         </form>
-        <img src="../assets/images/photos/wavy-4.svg" alt="" />
+        <img
+          src="../assets/images/photos/wavy-4.svg"
+          alt=""
+          class="d-none d-sm-flex"
+        />
       </div>
     </v-col>
   </v-row>
