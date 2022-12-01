@@ -220,6 +220,7 @@ export default {
 .section-mobile {
   margin-top: 30rem;
   padding: 0 0 0 13rem;
+  overflow-x: hidden;
 }
 
 .section-metrics {
@@ -239,8 +240,15 @@ export default {
 }
 
 @media screen and (max-width: 968.99px) {
-  .header-comp {
+  .header-comp,
+  .brands,
+  .section-service {
     padding: 0 6rem;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
   }
 }
 </style>

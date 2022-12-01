@@ -86,4 +86,10 @@ export default {
   font-size: 1.8rem;
   line-height: 2.6rem;
 }
+
+@media screen and (max-width: 968.99px) {
+  .service-wrapper {
+    margin: 1rem auto;
+  }
+}
 </style>

@@ -37,10 +37,9 @@ export default {
   border: 1px solid #d9d9d9;
   border-left: none;
   border-right: none;
-  padding: 3rem 10rem;
+  padding: 3rem 5rem;
   display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
 }
 
 .image-container {
@@ -50,5 +49,11 @@ export default {
 
 .image-container img {
   height: 100%;
+}
+
+@media screen and (max-width: 968.99px) {
+  .brand-wrapper {
+    overflow-x: scroll;
+  }
 }
 </style>

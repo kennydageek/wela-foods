@@ -86,12 +86,13 @@ body {
   /* font-family: var(--font-heading); */
   /* padding: 0 6rem; */
   /* padding: 3rem 13rem 0; */
+  overflow-x: hidden;
 }
 
 .main-app {
+  margin: 2rem auto;
   /* background: blue; */
   /* width: 85%; */
-  margin: 2rem auto;
   /* position: relative; */
   /* margin: 10px 40px; */
 }

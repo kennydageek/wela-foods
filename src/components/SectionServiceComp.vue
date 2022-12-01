@@ -1,15 +1,15 @@
 <template>
   <v-row class="service-row mb-0">
-    <v-col cols="5" class="service-info">
+    <v-col cols="5" sm="12" class="service-info">
       <slot name="heading"></slot>
       <slot name="service-box"></slot>
     </v-col>
-    <v-col cols="7" class="service-image" :class="bgColor">
+    <v-col cols="7" sm="12" class="service-image" :class="bgColor">
       <div class="service-image__img">
         <img :src="image" alt="" />
       </div>
 
-      <slot name="waves"></slot>
+      <slot name="waves" class="d-sm-none"></slot>
     </v-col>
   </v-row>
 </template>
