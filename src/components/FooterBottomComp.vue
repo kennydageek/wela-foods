@@ -8,14 +8,14 @@
     </div>
 
     <v-row class="footer-copy">
-      <v-col class="footer-copy__first-col">
+      <v-col class="footer-copy__first-col" cols="12" sm="6">
         <div class="img-div">
           <img src="../assets/images/icons/facebook.svg" alt="" />
           <img src="../assets/images/icons/youtube.svg" alt="" />
           <img src="../assets/images/icons/whatsapp.svg" alt="" />
         </div>
       </v-col>
-      <v-col class="footer-copy__second-col"
+      <v-col class="footer-copy__second-col" cols="12" sm="6"
         >© 2000-2021, All Rights Reserved</v-col
       >
     </v-row>
@@ -123,6 +123,20 @@ hr {
 @media screen and (max-width: 968.99px) {
   .link-wrapper {
     flex-wrap: wrap;
+    /* padding: 0 1rem; */
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 599.99px) {
+  .footer-bottom-wrapper {
+    padding: 0 0 0;
+  }
+
+  .img-div {
+    justify-content: center;
+  }
+  .footer-copy__second-col {
+    text-align: center;
   }
 }
 </style>

@@ -4,7 +4,7 @@
     <social-icon class="social-icon" />
 
     <v-row class="footer-top-row">
-      <v-col cols="6" class="first-col">
+      <v-col cols="12" sm="6" class="first-col mt-sm-10">
         <p class="first-col__heading">Wela</p>
         <p class="first-col__paragraph">
           We are a global food organization offering food prduce and tutorials
@@ -12,7 +12,7 @@
 
         <footer-contact />
       </v-col>
-      <v-col cols="5" class="second-col">
+      <v-col cols="12" sm="5" class="second-col mt-10">
         <p class="second-col__heading">Newsletter</p>
         <p class="second-col__paragraph">
           Be the first one to know about discounts, offers and events weekly in
