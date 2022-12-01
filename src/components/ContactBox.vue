@@ -2,6 +2,7 @@
   <v-row class="root">
     <v-col
       cols="4"
+      sm="6"
       class="contactbox-wrapper"
       v-for="(item, i) in contact"
       :key="i"

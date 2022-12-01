@@ -243,7 +243,10 @@ export default {
   .header-comp,
   .brands,
   .section-service,
-  .section-faq {
+  .section-faq,
+  .section-contact,
+  .section-register,
+  .section-form {
     padding: 0 6rem;
   }
 
