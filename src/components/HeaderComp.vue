@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row class="header-wrapper">
-      <v-col cols="7" class="heading-wrapper">
+      <v-col cols="12" sm="7" class="heading-wrapper">
         <h1 class="heading">
           You are what <br />
           you...<vue-typer
@@ -26,7 +26,7 @@
           <wf-base-button :large="true" :secondary="true" text="View Plans" />
         </div>
       </v-col>
-      <v-col cols="5" class="carousel-wrapper">
+      <v-col cols="5" class="carousel-wrapper d-none d-sm-flex">
         <carousel-comp class="carousell" />
       </v-col>
     </v-row>

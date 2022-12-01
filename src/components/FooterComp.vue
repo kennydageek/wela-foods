@@ -137,4 +137,10 @@ export default {
   /* margin: 1.2rem 0; */
   background-color: var(--color-primary);
 }
+
+@media screen and (max-width: 968.99px) {
+  .footer-wrapper {
+    padding: 7rem 6rem 2rem;
+  }
+}
 </style>

@@ -119,4 +119,10 @@ hr {
   align-self: center;
   text-align: right;
 }
+
+@media screen and (max-width: 968.99px) {
+  .link-wrapper {
+    flex-wrap: wrap;
+  }
+}
 </style>

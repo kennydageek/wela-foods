@@ -251,6 +251,10 @@ export default {
     padding: 0 6rem;
   }
 
+  .section-footer {
+    padding: 0 0;
+  }
+
   .section-mobile {
     margin-top: 20rem;
   }
@@ -262,6 +266,20 @@ export default {
   .heading {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 599.99px) {
+  .header-comp,
+  .brands,
+  .section-service,
+  .section-faq,
+  .section-contact,
+  .section-register,
+  .section-form,
+  .section-mobile,
+  .section-metrics {
+    padding: 0 2rem;
   }
 }
 </style>
