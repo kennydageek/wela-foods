@@ -183,4 +183,12 @@ export default {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 599.99px) {
+  .heading {
+    margin-top: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+}
 </style>

@@ -79,4 +79,10 @@ export default {
   margin-left: 1rem;
   align-self: center;
 }
+
+@media screen and (max-width: 969.99px) {
+  .social-row {
+    justify-content: flex-start;
+  }
+}
 </style>

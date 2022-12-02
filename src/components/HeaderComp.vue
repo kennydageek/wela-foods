@@ -21,9 +21,14 @@
             :large="true"
             :primary="true"
             text="Get Started"
-            class="mr-6"
+            class="mr-6 mt-5 mt-sm-0"
           />
-          <wf-base-button :large="true" :secondary="true" text="View Plans" />
+          <wf-base-button
+            class="mr-6 mt-5 mt-sm-0"
+            :large="true"
+            :secondary="true"
+            text="View Plans"
+          />
         </div>
       </v-col>
       <v-col cols="5" class="carousel-wrapper d-none d-sm-flex">
@@ -79,6 +84,7 @@ export default {
 
 .heading-cta {
   display: flex;
+  flex-wrap: wrap;
 }
 
 ::v-deep .typed {
@@ -113,6 +119,10 @@ export default {
 @media screen and (max-width: 599.99px) {
   .heading {
     font-size: 5rem;
+    line-height: 6rem;
+  }
+  .heading-cta {
+    justify-content: center;
   }
 }
 </style>

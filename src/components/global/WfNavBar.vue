@@ -36,7 +36,9 @@
       <v-list dense>
         <v-list-item v-for="item in items" :key="item.title" link>
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title class="title">{{
+              item.title
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -83,6 +85,9 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  font-size: 16px !important;
+}
 .navigation {
   /* background: red; */
   justify-content: space-between;

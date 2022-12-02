@@ -68,4 +68,10 @@ img {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 599.99px) {
+  .heading {
+    font-size: 40px;
+  }
+}
 </style>

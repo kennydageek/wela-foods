@@ -146,7 +146,7 @@ export default {
 
 @media screen and (max-width: 599.99px) {
   .footer-wrapper {
-    padding: 7rem 1rem 2rem;
+    padding: 7rem 3rem 2rem;
   }
 }
 </style>

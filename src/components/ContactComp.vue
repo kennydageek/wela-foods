@@ -74,4 +74,10 @@ export default {
   color: #000;
   margin-bottom: 8rem;
 }
+
+@media screen and (max-width: 968.99px) {
+  .contact-wrapper {
+    padding: 5rem 3rem 0 3rem;
+  }
+}
 </style>

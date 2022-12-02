@@ -76,6 +76,15 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 599.99px) {
+  html {
+    font-size: 58.25%;
+  }
+  .heading {
+    /* font-size: 5rem; */
+  }
+}
+
 body {
   font-size: 16px;
 }
@@ -120,7 +129,7 @@ body {
 
 @media screen and (max-width: 599.99px) {
   .nav-bar {
-    padding: 0 1rem;
+    padding: 0 3rem;
   }
 }
 </style>

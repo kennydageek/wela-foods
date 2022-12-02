@@ -19,14 +19,19 @@
       >
       </vue-countdown-timer>
     </p>
-    <div class="cta">
+    <div class="cta mt-5">
       <wf-base-button
         :large="true"
         :primary="true"
         text="Request access"
         class="mr-6"
       />
-      <wf-base-button :large="true" :tertiary="true" text="Contact team" />
+      <wf-base-button
+        class="mt-5"
+        :large="true"
+        :tertiary="true"
+        text="Contact team"
+      />
     </div>
 
     <img
@@ -83,11 +88,18 @@ export default {};
 
 .cta {
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: space-between; */
   width: 35rem;
 }
 
 i {
   font-style: normal !important;
+}
+
+@media screen and (max-width: 599.99px) {
+  .heading {
+    font-size: 40px;
+  }
 }
 </style>

@@ -14,7 +14,7 @@
         :waves="waves[0]"
       >
         <template #heading>
-          <h1 class="heading mt-16">
+          <h1 class="heading mt-5 mt-sm-16">
             Why use <span :class="txtColor[0]">Wela</span> food services ??
           </h1>
         </template>
@@ -279,11 +279,20 @@ export default {
   .section-form,
   .section-mobile,
   .section-metrics {
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
 
   .section-metrics {
     display: none;
+  }
+
+  .brand-comp {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-faq {
+    margin-top: 5rem;
   }
 }
 </style>

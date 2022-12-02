@@ -73,7 +73,7 @@ export default {
 .heading {
   color: #000;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 20px;
   font-family: 'neue machina';
   margin-left: 2.9rem;
   align-self: center;
@@ -83,13 +83,14 @@ export default {
 
 .content {
   margin-bottom: 0;
-  font-size: 1.8rem;
+  font-size: 18px;
   line-height: 2.6rem;
 }
 
 @media screen and (max-width: 968.99px) {
   .service-wrapper {
     margin: 1rem auto;
+    width: 90%;
   }
 }
 </style>

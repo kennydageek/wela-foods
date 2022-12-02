@@ -27,8 +27,8 @@
           <p class="second-col__num">70k</p>
         </div>
       </v-col>
-      <v-col cols="4" sm="4" md="3" class="third-col mt-10"> </v-col>
-      <v-col cols="7" sm="7" md="3" class="fourth-col mt-10">
+      <v-col cols="4" sm="4" md="3" class="third-col mt-10 mt-sm-0"> </v-col>
+      <v-col cols="7" sm="7" md="3" class="fourth-col mt-10 mt-sm-0">
         <div class="top">
           <div class="total-users">
             <p class="second-col__heading">
@@ -218,7 +218,7 @@ export default {};
   background-size: cover;
   border-radius: 1.5rem;
   background-position: center;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 .fourth-col {

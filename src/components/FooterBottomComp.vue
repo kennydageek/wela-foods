@@ -138,5 +138,9 @@ hr {
   .footer-copy__second-col {
     text-align: center;
   }
+
+  .link-wrapper {
+    padding: 3rem 3rem 0 3rem;
+  }
 }
 </style>
