@@ -281,5 +281,9 @@ export default {
   .section-metrics {
     padding: 0 2rem;
   }
+
+  .section-metrics {
+    display: none;
+  }
 }
 </style>

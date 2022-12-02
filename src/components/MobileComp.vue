@@ -51,6 +51,7 @@ img {
 
 @media screen and (max-width: 968.99px) {
   .heading {
+    font-size: 6rem;
     margin-top: 0;
     text-align: center;
   }

@@ -5,6 +5,7 @@ import router from './router';
 import store from './store';
 import upperFirst from 'lodash/upperFirst';
 import camelCase from 'lodash/camelCase';
+
 // global register at main.js
 import VueCountdownTimer from 'vuejs-countdown-timer';
 Vue.use(VueCountdownTimer);

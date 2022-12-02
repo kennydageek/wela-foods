@@ -109,4 +109,10 @@ export default {
     font-size: 6rem;
   }
 }
+
+@media screen and (max-width: 599.99px) {
+  .heading {
+    font-size: 5rem;
+  }
+}
 </style>

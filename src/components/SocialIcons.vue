@@ -10,7 +10,11 @@
         <img class="social__icon" :src="social.iconUrl" alt="" />
         <p class="social__name">{{ social.social }}</p>
       </div>
-      <img class="rarr" src="@/assets/images/icons/rarr.svg" alt="" />
+      <img
+        class="rarr d-none d-md-flex"
+        src="@/assets/images/icons/rarr.svg"
+        alt=""
+      />
     </v-col>
   </v-row>
 </template>
@@ -41,6 +45,7 @@ export default {
 <style scoped>
 .social-row {
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .social-wrapper {

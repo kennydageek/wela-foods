@@ -2,7 +2,8 @@
   <v-app id="app">
     <notification-bar class="notification-bar" />
     <v-main class="main-app">
-      <wf-nav-bar class="nav-bar" />
+      <wf-nav-bar class="nav-bar pt-10" />
+      <wf-navigation-drawer />
       <router-view />
     </v-main>
   </v-app>
@@ -86,11 +87,12 @@ body {
   /* font-family: var(--font-heading); */
   /* padding: 0 6rem; */
   /* padding: 3rem 13rem 0; */
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .main-app {
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
+  /* margin: 0 auto; */
   /* background: blue; */
   /* width: 85%; */
   /* position: relative; */
@@ -98,19 +100,27 @@ body {
 }
 
 .notification-bar {
-  /* position: absolute; */
-  /* width: 100%; */
+  position: absolute;
+  top: 0;
+
+  width: 100%;
 }
 
 .nav-bar {
   padding: 0 13rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 4.6rem;
 }
 
 @media screen and (max-width: 960.99px) {
   .nav-bar {
     padding: 0 6.4rem;
+  }
+}
+
+@media screen and (max-width: 599.99px) {
+  .nav-bar {
+    padding: 0 1rem;
   }
 }
 </style>
