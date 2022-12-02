@@ -110,4 +110,10 @@ i {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 399.99px) {
+  .cta {
+    justify-content: flex-start;
+  }
+}
 </style>

@@ -61,22 +61,33 @@ export default {
 
 .name {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 20px;
   margin-bottom: 0.7rem;
 }
 
 .email {
-  font-size: 1.8rem;
+  font-size: 18px;
   margin-bottom: 0.1rem;
   color: rgba(0, 0, 0, 0.67);
 }
 
 .phone {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .contactbox-wrapper:hover .content .email {
   color: #fff;
+}
+
+@media screen and (max-width: 499.99px) {
+  .contactbox-wrapper {
+    flex-direction: column;
+  }
+
+  .content {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 </style>
