@@ -1,7 +1,8 @@
 <template>
   <v-row class="social-row">
     <v-col
-      cols="3"
+      cols="4"
+      sm="3"
       class="social-wrapper"
       v-for="(social, i) in socials"
       :key="i"
