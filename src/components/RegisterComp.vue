@@ -27,7 +27,7 @@
         class="mr-6"
       />
       <wf-base-button
-        class="mt-5"
+        class="mt-5 mr-6"
         :large="true"
         :tertiary="true"
         text="Contact team"
@@ -51,7 +51,7 @@ export default {};
   position: relative;
   background-color: #f0f6f1;
   border-radius: 4rem;
-  padding: 10rem;
+  padding: 10rem 10rem;
 }
 .register-wrapper img {
   width: 18rem;
@@ -100,6 +100,14 @@ i {
 @media screen and (max-width: 599.99px) {
   .heading {
     font-size: 40px;
+  }
+
+  .register-wrapper {
+    padding: 5rem 4rem;
+  }
+
+  .cta {
+    justify-content: center;
   }
 }
 </style>
