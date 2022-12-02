@@ -66,4 +66,14 @@ img {
   margin-bottom: 0;
   font-weight: 600;
 }
+
+@media screen and (max-width: 499.99px) {
+  .footer-flex {
+    flex-direction: column;
+  }
+  .footer-contact-wrapper:not(:first-of-type) {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
 </style>
